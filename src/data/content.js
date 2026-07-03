@@ -11,7 +11,7 @@ import imgQuocHoi from '../assets/nha-quoc-hoi.jpg'
 import imgNguyenPhuTrong from '../assets/nguyen-phu-trong.jpg'
 import imgHcmcSkyline from '../assets/hcmc-skyline.jpg'
 import imgCovidTest from '../assets/covid-test-danang.jpg'
-import imgSinhVien from '../assets/sinh-vien-tinh-nguyen.jpg'
+import imgFptStatue from '../assets/fpt-self-made-man.jpg'
 
 export const site = {
   course: 'MLN131 · CHỦ NGHĨA XÃ HỘI KHOA HỌC',
@@ -274,10 +274,10 @@ export const part4 = {
     heading: '4.2 — Trách nhiệm công dân, sinh viên',
     source: 'Luật Phòng, chống tham nhũng',
     image: {
-      src: imgSinhVien,
-      alt: 'Sinh viên tình nguyện tặng sách cho trẻ em nghèo hiếu học tại Quảng Nam',
+      src: imgFptStatue,
+      alt: 'Tượng "Self-Made Man" trong khuôn viên Đại học FPT Hà Nội',
       caption:
-        'Sinh viên tình nguyện tặng sách cho trẻ em nghèo hiếu học (Kà Dăng, Quảng Nam) — trách nhiệm công dân bắt đầu từ những hành động cụ thể.',
+        'Tượng "Self-Made Man" tại Đại học FPT — biểu tượng của tinh thần tự đục đẽo, rèn giũa chính mình: liêm chính bắt đầu từ mỗi sinh viên.',
     },
     duties: [
       {
@@ -346,7 +346,7 @@ export const aiUsage = {
       },
     ],
     imagesLabel: 'NGUỒN ẢNH',
-    imagesTitle: 'Ảnh tư liệu — Wikimedia Commons',
+    imagesTitle: 'Ảnh tư liệu',
     images: [
       {
         label: 'Chân dung Chủ tịch Hồ Chí Minh (1946) — Ảnh tư liệu · Public domain',
@@ -357,8 +357,8 @@ export const aiUsage = {
         url: 'https://commons.wikimedia.org/wiki/File:National_Assembly_of_Vietnam.JPG',
       },
       {
-        label: 'Cố Tổng Bí thư Nguyễn Phú Trọng — Adam Schultz · Public domain',
-        url: 'https://commons.wikimedia.org/wiki/File:P20230910AS-0913_(53234691421).jpg',
+        label: 'Chân dung cố Tổng Bí thư Nguyễn Phú Trọng — Báo điện tử Chính phủ (VGP)',
+        url: 'https://baochinhphu.vn/tom-tat-tieu-su-tong-bi-thu-nguyen-phu-trong-102240720180958982.htm',
       },
       {
         label: 'Trung tâm tài chính TP. Hồ Chí Minh về đêm — Tran Van Ngoc · CC0',
@@ -369,8 +369,8 @@ export const aiUsage = {
         url: 'https://commons.wikimedia.org/wiki/File:Da_Nang_CDC_medical_workers_performs_COVID-19_test.jpg',
       },
       {
-        label: 'Sinh viên tình nguyện tặng sách (Quảng Nam) — Đại học Đông Á · CC BY-SA 4.0',
-        url: 'https://commons.wikimedia.org/wiki/File:T%E1%BA%B7ng_s%C3%A1ch_cho_tr%E1%BA%BB_em_ngh%C3%A8o_hi%E1%BA%BFu_h%E1%BB%8Dc_K%C3%A0_D%C4%83ng_(Qu%E1%BA%A3ng_Nam)_-_m%E1%BB%99t_trong_s%E1%BB%91_nhi%E1%BB%81u_ho%E1%BA%A1t_%C4%91%E1%BB%99ng_tr%C3%A1ch_nhi%E1%BB%87m_c%E1%BB%99ng_%C4%91%E1%BB%93ng_c%E1%BB%A7a_sinh_vi%C3%AAn_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_%C4%90%C3%B4ng_%C3%81.jpg',
+        label: 'Tượng "Self-Made Man", Đại học FPT Hà Nội — Tttrung · CC BY-SA 4.0',
+        url: 'https://commons.wikimedia.org/wiki/File:Self-made_Man_statue_at_FPT_University_Ha_Noi.jpg',
       },
     ],
   },
