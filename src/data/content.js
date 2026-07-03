@@ -303,7 +303,7 @@ export const conclusion = {
   text: 'Đấu tranh phòng, chống tham nhũng là một hành trình gian nan, lâu dài, nhưng là yếu tố tiên quyết để thanh lọc bộ máy, khẳng định quyền làm chủ thực sự của nhân dân.',
   emphasis:
     'Sự thành công của công cuộc này sẽ quyết định tính bền vững và sự phồn vinh của Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam.',
-  thanks: 'Nhóm em xin cảm ơn thầy/cô và các bạn đã lắng nghe.',
+  thanks: 'Nhóm em xin cảm ơn thầy và các bạn đã lắng nghe.',
   qna: 'SẴN SÀNG NHẬN CÂU HỎI PHẢN BIỆN →',
 }
 
@@ -381,5 +381,6 @@ export const aiUsage = {
 }
 
 export const footer = {
+  headline: 'THANK YOU',
   credit: 'MLN131 — Chủ nghĩa xã hội khoa học · Web thuyết trình nhóm · 2026',
 }

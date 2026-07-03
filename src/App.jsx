@@ -10,6 +10,7 @@ import Part3 from './components/Part3.jsx'
 import Part4 from './components/Part4.jsx'
 import Conclusion from './components/Conclusion.jsx'
 import AiUsage from './components/AiUsage.jsx'
+import ThankYouFooter from './components/ThankYouFooter.jsx'
 
 function App() {
   const pageRef = useReveal()
@@ -31,6 +32,7 @@ function App() {
         <Part4 />
         <Conclusion />
         <AiUsage />
+        <ThankYouFooter />
       </main>
     </div>
   )

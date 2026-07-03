@@ -1,5 +1,5 @@
 import Slide from './Slide.jsx'
-import { aiUsage, footer } from '../data/content.js'
+import { aiUsage } from '../data/content.js'
 
 function RefLink({ item }) {
   if (typeof item === 'string') return item
@@ -78,7 +78,6 @@ export default function AiUsage() {
         </div>
 
         <p className="ai-note mono reveal">{aiUsage.note}</p>
-        <p className="page-footer mono">{footer.credit}</p>
       </div>
     </Slide>
   )
