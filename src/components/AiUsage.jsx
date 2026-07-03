@@ -12,7 +12,7 @@ function RefLink({ item }) {
 }
 
 export default function AiUsage() {
-  const { ai, refs } = aiUsage
+  const { ai, appendix, refs } = aiUsage
 
   return (
     <Slide id="ai-usage" nav="ai-usage">
@@ -21,33 +21,61 @@ export default function AiUsage() {
           <span className="section-num mono">AI</span>
           <div>
             {aiUsage.kicker && <p className="section-kicker mono">{aiUsage.kicker}</p>}
-            <h2 className="section-title">{aiUsage.title}</h2>
-            <p className="section-subtitle">{aiUsage.intro}</p>
+            <div className="ai-title-row">
+              <h2 className="section-title">{aiUsage.title}</h2>
+              <a className="ai-appendix-link mono" href={appendix.url} target="_blank" rel="noreferrer">
+                {appendix.label}
+              </a>
+            </div>
           </div>
         </header>
 
         <div className="ai-layout">
-          <article className="ai-overview reveal">
-            <div className="ai-toolbox">
-              <span className="ai-eyebrow mono">CÔNG CỤ</span>
-              <div className="ai-chips">
-                {ai.tools.map((t, i) => (
-                  <span className="ai-chip mono" key={i}>
-                    {t}
+          <article className="ai-tools-panel reveal">
+            <span className="ai-eyebrow mono">CÔNG CỤ AI ĐÃ SỬ DỤNG</span>
+            <div className="ai-tool-grid">
+              {ai.tools.map((tool) => (
+                <article className="ai-tool-card" key={tool.id}>
+                  <span className={`ai-tool-icon ai-tool-icon--${tool.id}`} aria-hidden="true">
+                    <img src={tool.logo} alt="" />
                   </span>
-                ))}
-              </div>
-            </div>
-
-            <ol className="ai-scope-list">
-              {ai.items.map((item, i) => (
-                <li key={i}>
-                  <span className="ai-scope-num mono">{String(i + 1).padStart(2, '0')}</span>
-                  <p>{item}</p>
-                </li>
+                  <strong>{tool.name}</strong>
+                  <span>{tool.detail}</span>
+                </article>
               ))}
-            </ol>
+            </div>
           </article>
+
+          <section className="ai-ledger reveal">
+            <header className="ai-col-head">
+              <span className="mono">NHẬT KÝ SỬ DỤNG AI</span>
+              <strong>Công cụ · mục đích · prompt chính · kết quả · chỉnh sửa</strong>
+            </header>
+            <div className="ai-ledger-list">
+              {ai.ledger.map((item) => (
+                <article className="ai-ledger-card" key={item.tool}>
+                  <header>
+                    <span className="mono">{item.tool}</span>
+                    <h3>{item.purpose}</h3>
+                  </header>
+                  <dl>
+                    <div>
+                      <dt>Prompt chính</dt>
+                      <dd>{item.prompt}</dd>
+                    </div>
+                    <div>
+                      <dt>Kết quả</dt>
+                      <dd>{item.result}</dd>
+                    </div>
+                    <div>
+                      <dt>Phần chỉnh sửa</dt>
+                      <dd>{item.edits}</dd>
+                    </div>
+                  </dl>
+                </article>
+              ))}
+            </div>
+          </section>
 
           <div className="ai-refs">
             <article className="ai-col ai-col--sub reveal">
@@ -79,8 +107,6 @@ export default function AiUsage() {
             </article>
           </div>
         </div>
-
-        <p className="ai-note mono reveal">{aiUsage.note}</p>
       </div>
     </Slide>
   )

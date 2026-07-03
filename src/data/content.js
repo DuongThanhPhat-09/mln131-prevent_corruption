@@ -299,10 +299,27 @@ export const part4 = {
 }
 
 export const conclusion = {
+  title: 'Kết luận',
   kicker: '05 / KẾT LUẬN',
-  text: 'Đấu tranh phòng, chống tham nhũng là một hành trình gian nan, lâu dài, nhưng là yếu tố tiên quyết để thanh lọc bộ máy, khẳng định quyền làm chủ thực sự của nhân dân.',
+  text: 'Từ lý luận đến thực tiễn, có thể khẳng định: phòng, chống tham nhũng là điều kiện quan trọng để bảo vệ pháp luật, quyền làm chủ của nhân dân và sự trong sạch của bộ máy nhà nước.',
   emphasis:
-    'Sự thành công của công cuộc này sẽ quyết định tính bền vững và sự phồn vinh của Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam.',
+    'Vì vậy, chống tham nhũng không chỉ là nhiệm vụ của Nhà nước, mà còn là trách nhiệm công dân bắt đầu từ ý thức liêm chính và hành động giám sát hằng ngày.',
+  diagram: {
+    steps: [
+      {
+        label: 'Nhận diện',
+        text: 'Tham nhũng làm tha hóa quyền lực và bào mòn niềm tin.',
+      },
+      {
+        label: 'Kiểm soát',
+        text: 'Minh bạch thể chế, kiểm soát quyền lực, xử lý nghiêm minh.',
+      },
+      {
+        label: 'Xây dựng',
+        text: 'Bộ máy trong sạch, pháp quyền vững mạnh, nhân dân làm chủ.',
+      },
+    ],
+  },
   thanks: 'Nhóm em xin cảm ơn thầy và các bạn đã lắng nghe.',
   qna: 'SẴN SÀNG NHẬN CÂU HỎI PHẢN BIỆN →',
 }
@@ -310,15 +327,66 @@ export const conclusion = {
 export const aiUsage = {
   kicker: '',
   title: 'AI Usage & Nguồn tham khảo',
-  intro:
-    'Website được xây dựng với sự hỗ trợ của AI. Phạm vi sử dụng AI và toàn bộ nguồn tư liệu được công khai như sau:',
+  appendix: {
+    label: 'MỞ PHỤ LỤC PROMPT',
+    url: '/ai-usage-log.md',
+  },
   ai: {
-    tools: ['Claude Code — Anthropic', 'Codex — OpenAI', 'Gemini — Google', 'NotebookLM — Google'],
-    items: [
-      'Claude Code: dựng website, chuyển đề cương thuyết trình thành bố cục web',
-      'Codex: hỗ trợ xây dựng và tinh chỉnh giao diện web',
-      'Gemini: hỗ trợ research, tổng hợp thông tin cho nội dung thuyết trình',
-      'NotebookLM: đọc và tra cứu các tài liệu tham khảo của môn học',
+    tools: [
+      {
+        id: 'claude',
+        logo: 'https://cdn.simpleicons.org/claude',
+        name: 'Claude Code',
+        detail: 'Anthropic',
+      },
+      {
+        id: 'codex',
+        logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg',
+        name: 'Codex',
+        detail: 'OpenAI',
+      },
+      {
+        id: 'gemini',
+        logo: 'https://cdn.simpleicons.org/googlegemini',
+        name: 'Gemini',
+        detail: 'Google',
+      },
+      {
+        id: 'notebook',
+        logo: 'https://cdn.simpleicons.org/notebooklm',
+        name: 'NotebookLM',
+        detail: 'Google',
+      },
+    ],
+    ledger: [
+      {
+        tool: 'Claude Code',
+        purpose: 'Dựng website thuyết trình',
+        prompt: 'Chuyển đề cương MLN131 về phòng, chống tham nhũng thành bố cục web thuyết trình theo từng phần.',
+        result: 'Khung trang, nhịp section, component và bố cục trình bày ban đầu.',
+        edits: 'Nhóm rà soát nội dung, sửa lời văn, tinh chỉnh bố cục và thay ảnh/tư liệu phù hợp.',
+      },
+      {
+        tool: 'Codex',
+        purpose: 'Tinh chỉnh giao diện và kiểm tra kỹ thuật',
+        prompt: 'Điều chỉnh section, responsive, typography và đảm bảo các mục trình bày đúng cấp bậc thị giác.',
+        result: 'CSS/React được chỉnh sửa, build kiểm tra bằng lint và production build.',
+        edits: 'Nhóm duyệt lại hiển thị, yêu cầu sửa theo tiêu chí chấm và giữ quyền quyết định nội dung cuối.',
+      },
+      {
+        tool: 'Gemini',
+        purpose: 'Gợi ý hướng nghiên cứu',
+        prompt: 'Tổng hợp các luận điểm cần kiểm chứng về tham nhũng và Nhà nước pháp quyền xã hội chủ nghĩa.',
+        result: 'Danh sách ý tưởng, câu hỏi nghiên cứu và hướng liên hệ thực tiễn.',
+        edits: 'Chỉ giữ ý phù hợp, đối chiếu lại bằng giáo trình, văn kiện và nguồn chính thống trước khi đưa vào bài.',
+      },
+      {
+        tool: 'NotebookLM',
+        purpose: 'Tra cứu tài liệu tham khảo',
+        prompt: 'Đọc tài liệu môn học và trích ra các ý liên quan đến Nhà nước pháp quyền, dân chủ và phòng chống tham nhũng.',
+        result: 'Gợi ý vị trí nội dung cần đọc, tóm tắt nhanh các ý chính để nhóm kiểm tra lại.',
+        edits: 'Nhóm đọc lại tài liệu gốc, viết lại bằng lời của nhóm và ghi nguồn ở danh mục tham khảo.',
+      },
     ],
   },
   refs: {
@@ -374,7 +442,6 @@ export const aiUsage = {
       },
     ],
   },
-  note: 'Nội dung học thuật được trích từ các nguồn chính thống liệt kê ở trên. AI không tự sinh dữ kiện, số liệu học thuật.',
 }
 
 export const footer = {
