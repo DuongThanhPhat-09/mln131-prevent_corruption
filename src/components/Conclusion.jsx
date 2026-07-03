@@ -8,11 +8,6 @@ export default function Conclusion() {
         <p className="conclusion-kicker mono reveal">{conclusion.kicker}</p>
         <p className="conclusion-text reveal">{conclusion.text}</p>
         <p className="conclusion-emphasis reveal">{conclusion.emphasis}</p>
-        <div className="conclusion-end reveal">
-          <span className="conclusion-star">★</span>
-          <p>{conclusion.thanks}</p>
-          <span className="tag tag--gold">{conclusion.qna}</span>
-        </div>
       </div>
     </Slide>
   )

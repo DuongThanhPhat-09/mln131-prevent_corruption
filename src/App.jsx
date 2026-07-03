@@ -27,7 +27,7 @@ function App() {
         <Part2 />
         <Part3 />
         <div className="marquee-band" aria-hidden="true">
-          <Marquee items={marquees.two} variant="marquee--ink" />
+          <Marquee items={marquees.two} variant="marquee--red" />
         </div>
         <Part4 />
         <Conclusion />

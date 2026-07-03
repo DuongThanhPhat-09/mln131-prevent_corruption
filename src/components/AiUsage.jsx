@@ -27,23 +27,26 @@ export default function AiUsage() {
         </header>
 
         <div className="ai-layout">
-          <article className="ai-col ai-col--main reveal">
-            <header className="ai-col-head">
-              <span className="mono">{ai.label}</span>
-              <strong>{ai.heading}</strong>
-            </header>
-            <div className="ai-chips">
-              {ai.tools.map((t, i) => (
-                <span className="ai-chip mono" key={i}>
-                  {t}
-                </span>
-              ))}
+          <article className="ai-overview reveal">
+            <div className="ai-toolbox">
+              <span className="ai-eyebrow mono">CÔNG CỤ</span>
+              <div className="ai-chips">
+                {ai.tools.map((t, i) => (
+                  <span className="ai-chip mono" key={i}>
+                    {t}
+                  </span>
+                ))}
+              </div>
             </div>
-            <ul>
+
+            <ol className="ai-scope-list">
               {ai.items.map((item, i) => (
-                <li key={i}>{item}</li>
+                <li key={i}>
+                  <span className="ai-scope-num mono">{String(i + 1).padStart(2, '0')}</span>
+                  <p>{item}</p>
+                </li>
               ))}
-            </ul>
+            </ol>
           </article>
 
           <div className="ai-refs">

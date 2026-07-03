@@ -43,14 +43,14 @@ export default function Part4() {
                     <p>{d.text}</p>
                   </article>
                 ))}
+                <div className="sixdan reveal">
+                  {s2.sixDan.map((d, i) => (
+                    <span className="sixdan-chip" key={i}>
+                      {d}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="sixdan reveal">
-              {s2.sixDan.map((d, i) => (
-                <span className="sixdan-chip" key={i}>
-                  {d}
-                </span>
-              ))}
             </div>
           </div>
 

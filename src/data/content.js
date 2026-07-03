@@ -313,13 +313,10 @@ export const aiUsage = {
   intro:
     'Website được xây dựng với sự hỗ trợ của AI. Phạm vi sử dụng AI và toàn bộ nguồn tư liệu được công khai như sau:',
   ai: {
-    label: 'AI ĐÃ LÀM',
-    heading: 'Công khai phạm vi sử dụng AI',
     tools: ['Claude Code — Anthropic', 'Codex — OpenAI', 'Gemini — Google', 'NotebookLM — Google'],
     items: [
       'Claude Code: dựng website, chuyển đề cương thuyết trình thành bố cục web',
       'Codex: hỗ trợ xây dựng và tinh chỉnh giao diện web',
-      'Claude Code: tìm và chèn ảnh tư liệu từ Wikimedia Commons, ghi rõ tác giả & giấy phép (xem Nguồn ảnh)',
       'Gemini: hỗ trợ research, tổng hợp thông tin cho nội dung thuyết trình',
       'NotebookLM: đọc và tra cứu các tài liệu tham khảo của môn học',
     ],
