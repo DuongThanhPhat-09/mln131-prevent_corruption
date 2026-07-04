@@ -8,10 +8,10 @@ Phụ lục này công khai cách nhóm sử dụng AI trong quá trình làm we
 
 ### Claude Code
 
-- Mục đích: Dựng website thuyết trình, chuyển đề cương thành các section có bố cục rõ ràng.
-- Prompt chính: "Chuyển đề cương MLN131 về phòng, chống tham nhũng thành website thuyết trình theo từng phần: mở đầu, lý luận, biện chứng, thực tiễn, giải pháp, kết luận và nguồn tham khảo."
-- Kết quả: Khung trang, component, nhãn điều hướng và bố cục trình bày ban đầu.
-- Phần sinh viên chỉnh sửa: Rà soát nội dung, sửa lời văn, thay ảnh tư liệu, căn chỉnh bố cục, thêm nguồn và điều chỉnh thông điệp theo yêu cầu môn học.
+- Mục đích: Dựng website thuyết trình và hỗ trợ nhóm xây dựng game/sản phẩm sáng tạo.
+- Prompt chính: "Chuyển đề cương MLN131 về phòng, chống tham nhũng thành website thuyết trình theo từng phần; đồng thời hỗ trợ phác thảo game/sản phẩm sáng tạo để tăng tính tương tác cho bài."
+- Kết quả: Khung trang, component, nhãn điều hướng, bố cục trình bày ban đầu và ý tưởng triển khai game.
+- Phần sinh viên chỉnh sửa: Rà soát nội dung, sửa lời văn, thay ảnh tư liệu, căn chỉnh bố cục, thêm nguồn, kiểm thử ý tưởng game và quyết định phiên bản cuối theo yêu cầu môn học.
 
 ### Codex
 

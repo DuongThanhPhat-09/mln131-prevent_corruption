@@ -13,6 +13,7 @@ function RefLink({ item }) {
 
 export default function AiUsage() {
   const { ai, appendix, refs } = aiUsage
+  const toolsByName = new Map(ai.tools.map((tool) => [tool.name, tool]))
 
   return (
     <Slide id="ai-usage" nav="ai-usage">
@@ -52,28 +53,35 @@ export default function AiUsage() {
               <strong>Công cụ · mục đích · prompt chính · kết quả · chỉnh sửa</strong>
             </header>
             <div className="ai-ledger-list">
-              {ai.ledger.map((item) => (
-                <article className="ai-ledger-card" key={item.tool}>
-                  <header>
-                    <span className="mono">{item.tool}</span>
-                    <h3>{item.purpose}</h3>
-                  </header>
-                  <dl>
-                    <div>
-                      <dt>Prompt chính</dt>
-                      <dd>{item.prompt}</dd>
-                    </div>
-                    <div>
-                      <dt>Kết quả</dt>
-                      <dd>{item.result}</dd>
-                    </div>
-                    <div>
-                      <dt>Phần chỉnh sửa</dt>
-                      <dd>{item.edits}</dd>
-                    </div>
-                  </dl>
-                </article>
-              ))}
+              {ai.ledger.map((item) => {
+                const tool = toolsByName.get(item.tool)
+
+                return (
+                  <article className="ai-ledger-card" key={item.tool}>
+                    <header>
+                      <span className="ai-ledger-tool">
+                        {tool && <img src={tool.logo} alt="" aria-hidden="true" />}
+                        <span className="mono">{item.tool}</span>
+                      </span>
+                      <h3>{item.purpose}</h3>
+                    </header>
+                    <dl>
+                      <div>
+                        <dt>Prompt chính</dt>
+                        <dd>{item.prompt}</dd>
+                      </div>
+                      <div>
+                        <dt>Kết quả</dt>
+                        <dd>{item.result}</dd>
+                      </div>
+                      <div>
+                        <dt>Phần chỉnh sửa</dt>
+                        <dd>{item.edits}</dd>
+                      </div>
+                    </dl>
+                  </article>
+                )
+              })}
             </div>
           </section>
 

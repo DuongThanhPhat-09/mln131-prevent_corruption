@@ -361,10 +361,10 @@ export const aiUsage = {
     ledger: [
       {
         tool: 'Claude Code',
-        purpose: 'Dựng website thuyết trình',
-        prompt: 'Chuyển đề cương MLN131 về phòng, chống tham nhũng thành bố cục web thuyết trình theo từng phần.',
-        result: 'Khung trang, nhịp section, component và bố cục trình bày ban đầu.',
-        edits: 'Nhóm rà soát nội dung, sửa lời văn, tinh chỉnh bố cục và thay ảnh/tư liệu phù hợp.',
+        purpose: 'Dựng website thuyết trình và game sản phẩm sáng tạo',
+        prompt: 'Chuyển đề cương MLN131 thành bố cục web thuyết trình và hỗ trợ phác thảo game/sản phẩm sáng tạo của nhóm.',
+        result: 'Khung trang, nhịp section, component, bố cục trình bày ban đầu và ý tưởng triển khai game.',
+        edits: 'Nhóm rà soát nội dung, sửa lời văn, tinh chỉnh bố cục, thay ảnh/tư liệu và tự quyết định phần game cuối cùng.',
       },
       {
         tool: 'Codex',
