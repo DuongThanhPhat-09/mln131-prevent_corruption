@@ -12,7 +12,7 @@ function RefLink({ item }) {
 }
 
 export default function AiUsage() {
-  const { ai, appendix, refs } = aiUsage
+  const { ai, refs } = aiUsage
   const toolsByName = new Map(ai.tools.map((tool) => [tool.name, tool]))
 
   return (
@@ -22,12 +22,7 @@ export default function AiUsage() {
           <span className="section-num mono">AI</span>
           <div>
             {aiUsage.kicker && <p className="section-kicker mono">{aiUsage.kicker}</p>}
-            <div className="ai-title-row">
-              <h2 className="section-title">{aiUsage.title}</h2>
-              <a className="ai-appendix-link mono" href={appendix.url} target="_blank" rel="noreferrer">
-                {appendix.label}
-              </a>
-            </div>
+            <h2 className="section-title">{aiUsage.title}</h2>
           </div>
         </header>
 

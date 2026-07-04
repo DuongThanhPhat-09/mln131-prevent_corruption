@@ -1554,36 +1554,6 @@ main {
   font-size: 0.98rem;
 }
 
-.ai-title-row {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.ai-appendix-link {
-  display: inline-flex;
-  align-items: center;
-  width: fit-content;
-  border: 2px solid var(--ink);
-  border-radius: var(--radius-sm);
-  background: var(--gold);
-  box-shadow: var(--shadow-sm);
-  color: var(--ink);
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  line-height: 1.2;
-  text-decoration: none;
-  padding: 8px 10px;
-}
-
-.ai-appendix-link:hover,
-.ai-appendix-link:focus-visible {
-  translate: -1px -1px;
-  box-shadow: 5px 5px 0 var(--ink);
-}
-
 .ai-layout {
   display: grid;
   gap: clamp(18px, 3vw, 26px);

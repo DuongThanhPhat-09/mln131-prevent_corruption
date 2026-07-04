@@ -328,10 +328,6 @@ export const conclusion = {
 export const aiUsage = {
   kicker: '',
   title: 'AI Usage & Nguồn tham khảo',
-  appendix: {
-    label: 'MỞ PHỤ LỤC PROMPT',
-    url: '/ai-usage-log.md',
-  },
   ai: {
     tools: [
       {
