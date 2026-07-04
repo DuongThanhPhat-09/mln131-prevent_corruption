@@ -1362,6 +1362,22 @@ main {
   margin-top: 0;
 }
 
+.solution-subheading {
+  width: fit-content;
+  border: 2px solid var(--ink);
+  border-radius: var(--radius-sm);
+  background: var(--gold-soft);
+  box-shadow: var(--shadow-sm);
+  color: var(--red);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  margin: -4px 0 18px;
+}
+
 .sixdan-chip:nth-child(even) {
   background: var(--red);
   color: var(--paper);

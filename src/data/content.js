@@ -255,6 +255,7 @@ export const part4 = {
   s1: {
     heading: '4.1 — Giải pháp hoàn thiện thể chế',
     source: 'Giáo trình CNXHKH — Chương 4',
+    summaryLabel: '3 nhóm thể chế trọng tâm',
     solutions: [
       {
         title: 'Minh bạch thể chế kinh tế',

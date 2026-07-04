@@ -15,6 +15,7 @@ export default function Part4() {
           <h3 className="block-heading reveal">
             {s1.heading} <span className="heading-src mono">({s1.source})</span>
           </h3>
+          <p className="solution-subheading mono reveal">{s1.summaryLabel}</p>
           <div className="traits-grid">
             {s1.solutions.map((sol, i) => (
               <article className="card reveal" key={i}>
