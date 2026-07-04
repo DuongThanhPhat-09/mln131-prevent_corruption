@@ -18,6 +18,9 @@
 }
 
 .nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 900;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
@@ -25,8 +28,36 @@
   white-space: nowrap;
 }
 
-.nav-star {
-  color: var(--red);
+.nav-flag {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  aspect-ratio: 3 / 2;
+  flex: 0 0 auto;
+  background: var(--red);
+  border: 1px solid var(--ink);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.nav-flag::before {
+  content: '';
+  width: 9px;
+  aspect-ratio: 1;
+  background: var(--gold);
+  clip-path: polygon(
+    50% 0,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
 }
 
 .nav-links {

@@ -46,7 +46,8 @@ export default function Nav() {
   return (
     <nav className="nav">
       <a className="nav-brand" href="#mo-dau" onClick={(e) => jumpTo(e, 'mo-dau')}>
-        <span className="nav-star">★</span> GIẶC NỘI XÂM
+        <span className="nav-flag" aria-hidden="true" />
+        <span>GIẶC NỘI XÂM</span>
       </a>
       <div className="nav-links">
         {navItems.map((item, i) => (
