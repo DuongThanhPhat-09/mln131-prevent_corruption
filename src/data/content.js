@@ -320,7 +320,7 @@ export const conclusion = {
       },
     ],
   },
-  thanks: 'Nhóm em xin cảm ơn thầy và các bạn đã lắng nghe.',
+  thanks: 'Nhóm chúng em xin cảm ơn thầy và các bạn đã lắng nghe.',
   qna: 'SẴN SÀNG NHẬN CÂU HỎI PHẢN BIỆN →',
 }
 

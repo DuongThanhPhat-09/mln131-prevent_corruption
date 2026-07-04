@@ -1917,18 +1917,6 @@ main {
   right: 0;
 }
 
-.thank-footer-kicker {
-  border: 2px solid var(--paper);
-  border-radius: var(--radius-sm);
-  background: var(--red);
-  box-shadow: var(--shadow-sm);
-  color: var(--gold);
-  font-size: clamp(0.72rem, 1.3vw, 0.86rem);
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  padding: 8px 14px;
-}
-
 .thank-footer-title-row {
   display: flex;
   align-items: center;
@@ -1987,11 +1975,12 @@ main {
   min-height: 38px;
   border-left: 3px solid var(--gold);
   padding-left: 16px;
-  max-width: 620px;
+  max-width: none;
   font-size: clamp(0.72rem, 1.4vw, 0.92rem);
   letter-spacing: 0.08em;
   opacity: 0.82;
   text-align: left;
+  white-space: nowrap;
 }
 
 @media (max-width: 640px) {
@@ -2023,6 +2012,7 @@ main {
     border-top: 3px solid var(--gold);
     padding: 14px 0 0;
     text-align: center;
+    white-space: normal;
   }
 }
 

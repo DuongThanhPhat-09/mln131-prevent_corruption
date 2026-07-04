@@ -4,7 +4,6 @@ export default function ThankYouFooter() {
   return (
     <footer className="thank-footer" aria-label="Lời cảm ơn cuối bài">
       <div className="thank-footer-inner">
-        <p className="thank-footer-kicker mono">MLN131 / HOÀN TẤT</p>
         <div className="thank-footer-title-row">
           <span className="thank-footer-star" aria-hidden="true">
             ★
